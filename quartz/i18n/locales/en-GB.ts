@@ -2,56 +2,56 @@ import { Translation } from "./definition"
 
 export default {
   propertyDefaults: {
-    title: "Untitled",
-    description: "No description provided",
+    title: "untitled",
+    description: "no description",
   },
   components: {
     callout: {
-      note: "Note",
-      abstract: "Abstract",
-      info: "Info",
-      todo: "To-Do",
-      tip: "Tip",
-      success: "Success",
-      question: "Question",
-      warning: "Warning",
-      failure: "Failure",
-      danger: "Danger",
-      bug: "Bug",
-      example: "Example",
-      quote: "Quote",
+      note: "note",
+      abstract: "abstract",
+      info: "info",
+      todo: "todo",
+      tip: "tip",
+      success: "success",
+      question: "question",
+      warning: "warning",
+      failure: "failure",
+      danger: "danger",
+      bug: "bug",
+      example: "example",
+      quote: "quote",
     },
     backlinks: {
-      title: "Backlinks",
-      noBacklinksFound: "No backlinks found",
+      title: "backlinks",
+      noBacklinksFound: "no backlinks",
     },
     themeToggle: {
-      lightMode: "Light mode",
-      darkMode: "Dark mode",
+      lightMode: "light mode",
+      darkMode: "dark mode",
     },
     explorer: {
-      title: "Explorer",
+      title: "explorer",
     },
     footer: {
-      createdWith: "Created with",
+      createdWith: "created with",
     },
     graph: {
-      title: "Graph View",
+      title: "graph view",
     },
     recentNotes: {
-      title: "Recent Notes",
-      seeRemainingMore: ({ remaining }) => `See ${remaining} more →`,
+      title: "recent notes",
+      seeRemainingMore: ({ remaining }) => `see ${remaining} more →`,
     },
     transcludes: {
-      transcludeOf: ({ targetSlug }) => `Transclude of ${targetSlug}`,
-      linkToOriginal: "Link to original",
+      transcludeOf: ({ targetSlug }) => `transclude of ${targetSlug}`,
+      linkToOriginal: "link to original",
     },
     search: {
-      title: "Search",
-      searchBarPlaceholder: "Search for something",
+      title: "press [/] to search",
+      searchBarPlaceholder: "looking for someone?",
     },
     tableOfContents: {
-      title: "Table of Contents",
+      title: "table of contents",
     },
     contentMeta: {
       readingTime: ({ minutes }) => `${minutes} min read`,
@@ -59,22 +59,22 @@ export default {
   },
   pages: {
     rss: {
-      recentNotes: "Recent notes",
-      lastFewNotes: ({ count }) => `Last ${count} notes`,
+      recentNotes: "recent notes",
+      lastFewNotes: ({ count }) => `last ${count} notes`,
     },
     error: {
-      title: "Not Found",
-      notFound: "Either this page is private or doesn't exist.",
-      home: "Return to Homepage",
+      title: "404",
+      notFound: "what is everyone looking for?",
+      home: "return home",
     },
     folderContent: {
-      folder: "Folder",
+      folder: "folder",
       itemsUnderFolder: ({ count }) =>
-        count === 1 ? "1 item under this folder." : `${count} items under this folder.`,
+        count === 1 ? "1 item in this folder" : `${count} items in this folder`,
     },
     tagContent: {
-      tag: "Tag",
-      tagIndex: "Tag Index",
+      tag: "tag",
+      tagIndex: "tag index",
       itemsUnderTag: ({ count }) =>
         count === 1 ? "1 item with this tag." : `${count} items with this tag.`,
       showingFirst: ({ count }) => `Showing first ${count} tags.`,
