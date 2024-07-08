@@ -7,8 +7,7 @@ export const sharedPageComponents: SharedLayout = {
   header: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      "github": "https://github.com/somewherer/quartz",
     },
   }),
 }
@@ -29,7 +28,34 @@ export const defaultContentPageLayout: PageLayout = {
     Component.DesktopOnly(Component.Explorer()),
   ],
   right: [
-    Component.Graph(),
+    Component.Graph({
+      localGraph: {
+        drag: true, // whether to allow panning the view around
+        zoom: true, // whether to allow zooming in and out
+        depth: 1, // how many hops of notes to display
+        scale: 1.3, // default view scale
+        repelForce: 2, // how much nodes should repel each other
+        centerForce: 0.3, // how much force to use when trying to center the nodes
+        linkDistance: 20, // how long should the links be by default?
+        fontSize: 0.6, // what size should the node labels be?
+        opacityScale: 5, // how quickly do we fade out the labels when zooming out?
+        removeTags: [], // what tags to remove from the graph
+        showTags: true, // whether to show tags in the graph
+      },
+      globalGraph: {
+        drag: true, // whether to allow panning the view around
+        zoom: true, // whether to allow zooming in and out
+        depth: -1, // how many hops of notes to display
+        scale: 0.9, // default view scale
+        repelForce: 2, // how much nodes should repel each other
+        centerForce: 0.8, // how much force to use when trying to center the nodes
+        linkDistance: 40, // how long should the links be by default?
+        fontSize: 0.45, // what size should the node labels be?
+        opacityScale: 3, // how quickly do we fade out the labels when zooming out?
+        removeTags: [], // what tags to remove from the graph
+        showTags: true, // whether to show tags in the graph
+      },
+    }),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],
@@ -45,5 +71,36 @@ export const defaultListPageLayout: PageLayout = {
     Component.Darkmode(),
     Component.DesktopOnly(Component.Explorer()),
   ],
-  right: [],
+  right: [
+    Component.Graph({
+      localGraph: {
+        drag: true, // whether to allow panning the view around
+        zoom: true, // whether to allow zooming in and out
+        depth: 1, // how many hops of notes to display
+        scale: 1.3, // default view scale
+        repelForce: 2, // how much nodes should repel each other
+        centerForce: 0.3, // how much force to use when trying to center the nodes
+        linkDistance: 20, // how long should the links be by default?
+        fontSize: 0.6, // what size should the node labels be?
+        opacityScale: 5, // how quickly do we fade out the labels when zooming out?
+        removeTags: [], // what tags to remove from the graph
+        showTags: true, // whether to show tags in the graph
+      },
+      globalGraph: {
+        drag: true, // whether to allow panning the view around
+        zoom: true, // whether to allow zooming in and out
+        depth: -1, // how many hops of notes to display
+        scale: 0.9, // default view scale
+        repelForce: 2, // how much nodes should repel each other
+        centerForce: 0.8, // how much force to use when trying to center the nodes
+        linkDistance: 40, // how long should the links be by default?
+        fontSize: 0.45, // what size should the node labels be?
+        opacityScale: 3, // how quickly do we fade out the labels when zooming out?
+        removeTags: [], // what tags to remove from the graph
+        showTags: true, // whether to show tags in the graph
+      },
+    }),
+    Component.DesktopOnly(Component.TableOfContents()),
+    Component.Backlinks(),
+  ],
 }
