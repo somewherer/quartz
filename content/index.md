@@ -1,6 +1,10 @@
 ---
-title: Welcome to Quartz 4
+title: quartz fork
 ---
+
+this project is a fork of https://github.com/jackyzha0/quartz
+you can view changes made in this fork at https://github.com/somewherer/quartz
+
 
 Quartz is a fast, batteries-included static-site generator that transforms Markdown content into fully functional websites. Thousands of students, developers, and teachers are [[showcase|already using Quartz]] to publish personal notes, websites, and [digital gardens](https://jzhao.xyz/posts/networked-thought) to the web.
 
