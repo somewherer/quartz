@@ -9,7 +9,7 @@ const config: QuartzConfig = {
     enablePopovers: true,
     analytics: null,
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "somewherer.com",
     ignorePatterns: ["assets/*.md", "templates", ".obsidian"],
     defaultDateType: "created",
     theme: {
