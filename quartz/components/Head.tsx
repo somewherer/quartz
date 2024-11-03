@@ -23,9 +23,9 @@ export default (() => {
     return (
       <head>
         <title>{title}</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <meta name="theme-color" content="#ffffff">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="theme-color" content="#ffffff" />
 
         <meta name="description" content={description} />
         <meta property="og:title" content={title} />
@@ -36,13 +36,13 @@ export default (() => {
         {cfg.baseUrl && <meta property="og:image" content={ogImagePath} />}
         <link rel="icon" href={iconPath} />
         
-        <meta content="https://somewherer.com" property="og:url"/>
-        <meta property="og:type" content="website"/>
+        <meta content="https://somewherer.com" property="og:url" />
+        <meta property="og:type" content="website" />
 
-        <meta property="twitter:title" content="somewherer">
-        <meta property="twitter:description" content="a journey">
-        <meta property="twitter:url" content="https://somewherer.com">
-        <meta property="twitter:card" content="what's a card?">
+        <meta property="twitter:title" content="somewherer" />
+        <meta property="twitter:description" content="a journey" />
+        <meta property="twitter:url" content="https://somewherer.com" />
+        <meta property="twitter:card" content="what's a card?" />
         
         
         {cfg.theme.cdnCaching && cfg.theme.fontOrigin === "googleFonts" && (
@@ -54,7 +54,7 @@ export default (() => {
         )}
         
         
-        <link rel="me" href="https://mastodon.social/@somewherer">
+        <link rel="me" href="https://mastodon.social/@somewherer" />
         
         {css.map((href) => (
           <link key={href} href={href} rel="stylesheet" type="text/css" spa-preserve />
